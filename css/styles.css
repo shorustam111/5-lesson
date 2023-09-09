@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  box-sizing: inherit;
+  height: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    /* padding: 0 20px; */
+}
+
+.spain {
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(to bottom,
+    red 0%,
+    red 25%,
+    yellow 25%,
+    yellow 75%,
+    red 75%,
+    red 100%);   
+}
+
+.spain_flag {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 170px;
+    left: 300px;
+}
+
+.japan {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(186, 185, 185);
+}
+
+.japan_white {
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 150px;
+}
+
+.japan_red {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 190px;
+    top: 40px;
+}
+
+.telegram {
+    padding-left: 50px;
+}
+
+.telegram::before {
+    content: "";
+    background-image: url("../img/instagram.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    padding-left: px;
+}
+
+.menu {
+    display: none;
+}
+
+.listItem:hover .menu {
+    display: block;
+}
